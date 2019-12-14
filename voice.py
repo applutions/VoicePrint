@@ -1,17 +1,7 @@
-#!/uspeech_recognition/bin/env python3
-"""
-This is a demo for a voice biometrics application
-"""
-
-
-
-
-
-# This is used to dump the models into an object
 import pickle
 import datetime
-import os                                               # For creating directories
-import shutil                                           # For deleting directories
+import os                                             
+import shutil                                          
 
 
 import matplotlib.pyplot as plt
@@ -324,9 +314,7 @@ def verify():
 
 
 def calculate_delta(array):
-    """Calculate and returns the delta of given feature vector matrix
-    (https://appliedmachinelearning.blog/2017/11/14/spoken-speaker-identification-based-on-gaussian-mixture-models-python-implementation/)"""
-
+    
     print("[Delta] : Calculating delta")
 
     rows, cols = array.shape
